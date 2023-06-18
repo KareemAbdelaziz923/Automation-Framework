@@ -20,7 +20,7 @@ public class login_module_Test extends TestBase {
 		login.Admin_Login();
 
 
-		Assert.assertTrue(login.SuccessMessage.getText().contains("Satota"));
+		Assert.assertTrue(login.SuccessMessage.getText().contains("Dashboard"));
 
 
 
