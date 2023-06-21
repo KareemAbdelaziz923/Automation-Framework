@@ -5,13 +5,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 import utilites.Helper;
 
 public class TestBase {
 
 	public static WebDriver driver ;
+	
 
 	@BeforeSuite
 
@@ -27,13 +30,13 @@ public class TestBase {
 
 
 	@AfterSuite
-
 	public void stopdriver() {
 
-		driver.quit();
+
+		driver.close();
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	
 	public void screenshotonfailure(ITestResult result)
 	{
