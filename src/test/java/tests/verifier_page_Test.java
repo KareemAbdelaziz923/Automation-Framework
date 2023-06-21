@@ -15,12 +15,12 @@ public class verifier_page_Test extends TestBase {
 	
 	Verifier_Page Verifier ;
 	
-	@Test( priority = 0)
+	@Test(priority = 0)
 	public void verifier_Creation () {
 		
 
-//		login = new Login_Page(driver);
-	//	login.Admin_Login();
+		login = new Login_Page(driver);
+		login.Admin_Login();
 	Verifier = new Verifier_Page(driver);
 	
 	Verifier.Verifier_Creation();
@@ -29,7 +29,7 @@ public class verifier_page_Test extends TestBase {
 
 }
 	
-	@Test( priority = 1)
+	@Test(priority = 1)
 	public void Verifier_update () {
 		
 		
@@ -41,7 +41,7 @@ public class verifier_page_Test extends TestBase {
 
 	}
 
-	@Test( priority = 2)
+	@Test(priority = 2)
 	public void Verifier_delete () throws InterruptedException {
 		
 		Verifier = new Verifier_Page(driver);

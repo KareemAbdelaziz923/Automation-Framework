@@ -11,17 +11,17 @@ import pages.Employee_Page;
 import pages.Login_Page;
 
 
-public class employee_page_Test extends TestBase {
+public class employeepage_Test extends TestBase {
 	
 Employee_Page   Employee ;
 Login_Page login ; 
 
-@Test( priority = 0)
+@Test(priority = 0)
 public void Employee_creation () {
 	
 	
-	login = new Login_Page(driver);
-	login.Admin_Login();
+//	login = new Login_Page(driver);
+//	login.Admin_Login();
 	Employee = new Employee_Page(driver);
 	
 	Employee.Employee_Creation();
@@ -30,7 +30,7 @@ public void Employee_creation () {
 	
 }
 
-@Test( priority = 1)
+@Test(priority = 1)
 public void Employee_update () {
 	
 	
@@ -42,7 +42,7 @@ public void Employee_update () {
 
 }
 
-@Test( priority = 2)
+@Test(priority = 2)
 public void Employee_delete () throws InterruptedException {
 	
 	Employee = new Employee_Page(driver);

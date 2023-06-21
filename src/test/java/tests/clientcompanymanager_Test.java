@@ -15,12 +15,12 @@ public class clientcompanymanager_Test extends TestBase {
 	
 	ClientCompanyManager_page Client ;
 	
-	@Test( priority = 0)
+	@Test(priority = 0)
 	public void ClientManager_Creation () {
 		
 
-	//login = new Login_Page(driver);
-	//login.Admin_Login();
+	login = new Login_Page(driver);
+	login.Admin_Login();
 	
 	
 	Client = new ClientCompanyManager_page(driver);
@@ -31,7 +31,7 @@ public class clientcompanymanager_Test extends TestBase {
 
 }
 	
-	@Test( priority = 1)
+	@Test(priority = 1)
 	public void ClientManager_update () {
 		
 		
@@ -43,7 +43,7 @@ public class clientcompanymanager_Test extends TestBase {
 
 	}
 
-	@Test( priority = 2)
+	@Test(priority = 2)
 	public void ClientManager_delete () throws InterruptedException {
 		
 		Client = new ClientCompanyManager_page(driver);

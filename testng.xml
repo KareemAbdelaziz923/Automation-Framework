@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="false" name="CVB Portal">
-  <test name="Regression Test">
+<suite parallel="false" name="CVB Portal"  >
+  <test name="Regression Test" >
     <classes>
      <class name="tests.login_page_Test"/>
-      <class name="tests.employee_page_Test"/>
+   
      <class name="tests.clientcompanymanager_Test"/>
+        <class name="tests.employee_page_Test"/>
      <class name="tests.verifier_page_Test"/>
      
     </classes>

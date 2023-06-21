@@ -10,7 +10,7 @@ public class login_page_Test extends TestBase {
 	
 	Login_Page login ;
 
-	@Test 
+ @Test(priority = 0)
 	public void Admin_can_login_successfully () 
 	{
 
