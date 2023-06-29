@@ -1,6 +1,6 @@
 Feature: Validate Employee add update and delete operation
  
-@SmokeTest
+@SmokeTest1
   Scenario: Login as admin and add Employee
     Given User is on home page and login with valid credentials
           | UserType | Action      |
@@ -22,7 +22,7 @@ Feature: Validate Employee add update and delete operation
       | Philip1  | Peter     |       | 6789345222 | Dev      |
     Then Verification status should be 'Verified'
     
-@SmokeTest1
+@SmokeTest
   Scenario: Login as admin and delete Employee
     Given User is on home page and login with valid credentials
           | UserType | Action         |
