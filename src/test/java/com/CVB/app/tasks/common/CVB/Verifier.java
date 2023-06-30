@@ -58,6 +58,7 @@ private static Logger logger = Logger.getLogger(Verifier.class.getName());
 		waitABit(999);
 		actor.attemptsTo(Click.on(VerifierPage.VERIFIERMENU));
 
+		//All actions related to verified
 		waitABit(1200);
 		switch (action) {
 		case "AddVerifier":
