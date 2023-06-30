@@ -4,6 +4,7 @@ import java.util.logging.Logger;
 import com.CVB.app.tasks.common.Login;
 import com.CVB.app.tasks.common.CVB.ClientCompanyManager;
 import com.CVB.app.tasks.common.CVB.Employee;
+import com.CVB.app.tasks.common.CVB.Verifier;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.Before;
@@ -43,6 +44,11 @@ public class ApplicationSteps extends UIInteractionSteps {
 	@Given("provides employee user information and add")
 	public void provides_employee_user_information_and_add(DataTable employeeinfo) {
 		givenThat(actor).attemptsTo(Employee.withUnderlinedetails(employeeinfo));
+	}
+	
+	@Given("provides verifier user information and add")
+	public void provides_verifier_user_information_and_add(DataTable verifierinfo) {
+		givenThat(actor).attemptsTo(Verifier.withUnderlinedetails(verifierinfo));
 	}
 	
 	@When("navigate to dashboard and verify login")

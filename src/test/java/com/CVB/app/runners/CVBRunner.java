@@ -7,7 +7,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-		features = {"src/test/resources/features/CVB_Login/Employee.feature"},
+		features = {"src/test/resources/features/CVB_Login/Verifier.feature"},
 		plugin = { "pretty" },
 		glue = {"com.CVB.app"},
 		tags = "@SmokeTest1",	
